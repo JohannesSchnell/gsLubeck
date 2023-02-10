@@ -12,6 +12,10 @@ sh start.sh
 
 geoserver auf [localhost/geoserver](http://localhost/geoserver)
 
+## wichtig
+
+**man muss waehrend die App lauft im geoserver eingeloggt sein**
+
 ## config im geoserver
 
 einloggen: user:admin, pw: geoserver
