@@ -8,7 +8,7 @@ sh start.sh
 
 ## geoserver im browser oeffnen
 
-geoserver auf [localhost/geoserver](localhost/geoserver)
+geoserver auf [localhost/geoserver](http://localhost/geoserver)
 
 ## config im geoserver
 
