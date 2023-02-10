@@ -37,13 +37,13 @@ Navigation links
 - name von "u-component_of_wind_height_above_ground" zu "u" aendern, analog mit "v-comp..."
 - speichern
 
-3. style erstellen:
+4. style erstellen:
 
 - name: wind_spd_dir, arbeitsbereich: maridata
 - inhalt von wind_spd_dir.xml ins fenster kopieren
 - speichern
 
-4. layer >> uv_wind
+5. layer >> uv_wind
 
 - WMS-Einstellungen den Stil wind_spd_dir hinzufuegen
 - speichern
