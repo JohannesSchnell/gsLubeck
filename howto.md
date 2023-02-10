@@ -47,3 +47,7 @@ Navigation links
 
 - WMS-Einstellungen den Stil wind_spd_dir hinzufuegen
 - speichern
+
+## wichtig
+
+**man muss waehrend die App lauft im geoserver eingeloggt sein**
