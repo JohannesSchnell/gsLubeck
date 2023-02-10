@@ -2,6 +2,8 @@
 
 ## geoserver docker starten
 
+linux/ mac
+
 ```shell
 sh start.sh
 ```
