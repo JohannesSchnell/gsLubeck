@@ -18,12 +18,30 @@ einloggen: user:admin, pw: geoserver
 
 Navigation links
 
-1. arbeitsbereich erstellen: ⋅⋅* name: maridata ⋅⋅* uri: maridata
+1. arbeitsbereich erstellen:
 
-2. datenspeicher erstellen: Rasterdatenquellen >> NetCDF >> arbeitsberech: maridata, name: uvwind, file durchsuchen wind_uv_kanal.nc
+- name: maridata
+- uri: maridata
 
-3. layer erstellen: maridata:wind auswaehlen >> Configure new Coverage view >> beide baender auswaehlen, name: uv_wind, speichern >> runterscrolen zu Baender, name von "u-component_of_wind_height_above_ground" zu "u" aendern, analog mit "v-comp...", speichern
+2. datenspeicher erstellen:
 
-4. style erstellen: name: wind_spd_dir, arbeitsbereich: maridata, inhalt von wind_spd_dir.xml ins fenster kopieren, speichern
+- Rasterdatenquellen >> NetCDF >> arbeitsberech: maridata, name: uvwind
+- file durchsuchen wind_uv_kanal.nc
 
-5. layer >> uv_wind >> WMS-Einstellungen den Stil wind_spd_dir hinzufuegen, speichern
+3. layer erstellen:
+
+- maridata:wind auswaehlen >> Configure new Coverage view >> beide baender auswaehlen
+- name: uv_wind, speichern >> runterscrolen zu Baender
+- name von "u-component_of_wind_height_above_ground" zu "u" aendern, analog mit "v-comp..."
+- speichern
+
+3. style erstellen:
+
+- name: wind_spd_dir, arbeitsbereich: maridata
+- inhalt von wind_spd_dir.xml ins fenster kopieren
+- speichern
+
+4. layer >> uv_wind
+
+- WMS-Einstellungen den Stil wind_spd_dir hinzufuegen
+- speichern
