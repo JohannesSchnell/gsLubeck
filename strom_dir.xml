@@ -47,23 +47,65 @@
                         </ogc:Add>
                       </ogc:Function>
                       <ogc:Literal>#ffffff</ogc:Literal>
-                      <ogc:Literal>0.01</ogc:Literal>
+                      <ogc:Literal>0.5</ogc:Literal>
                       <ogc:Literal>#1ce3ed</ogc:Literal>
-                      <ogc:Literal>0.02</ogc:Literal>
+                      <ogc:Literal>0.75</ogc:Literal>
+                      <ogc:Literal>#2040f7</ogc:Literal>
+                      <ogc:Literal>1</ogc:Literal>
                       <ogc:Literal>#148818</ogc:Literal>
-                      <ogc:Literal>0.06</ogc:Literal>
-                      <ogc:Literal>#dbeb52</ogc:Literal>
-                      <ogc:Literal>0.1</ogc:Literal>
-                      <ogc:Literal>#edad4c</ogc:Literal>
-                      <ogc:Literal>0.2</ogc:Literal>
-                      <ogc:Literal>#c92d24</ogc:Literal>
-
+                      <ogc:Literal>1.25</ogc:Literal>
+                      <ogc:Literal>#e2f720</ogc:Literal>
+                      <ogc:Literal>1.5</ogc:Literal>
+                      <ogc:Literal>#f7b320</ogc:Literal>
+                      <ogc:Literal>1.75</ogc:Literal>
+                      <ogc:Literal>#f77a20</ogc:Literal>
+                      <ogc:Literal>2</ogc:Literal>
+                      <ogc:Literal>#f73620</ogc:Literal>
+                      <ogc:Literal>2.5</ogc:Literal>
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </ogc:Function >
+                  </CssParameter>
+                  <CssParameter name="fill-opacity">
+                    <ogc:Function name ="Categorize">
+                      <ogc:Function name="sqrt">
+                        <ogc:Add>
+                          <ogc:Mul>
+                            <ogc:PropertyName>uo</ogc:PropertyName>
+                            <ogc:PropertyName>uo</ogc:PropertyName>
+                          </ogc:Mul>
+                          <ogc:Mul>
+                            <ogc:PropertyName>vo</ogc:PropertyName>
+                            <ogc:PropertyName>vo</ogc:PropertyName>
+                          </ogc:Mul>
+                        </ogc:Add>
+                      </ogc:Function>
+                      <ogc:Literal>1</ogc:Literal>
+                      <ogc:Literal>3</ogc:Literal>
+                      <ogc:Literal>0</ogc:Literal>
                     </ogc:Function >
                   </CssParameter>
                 </Fill>
 
                 <Stroke>
-                  <CssParameter name="stroke-width">0.5</CssParameter>
+                  <CssParameter name="stroke-width">
+                    <ogc:Function name ="Categorize">
+                      <ogc:Function name="sqrt">
+                        <ogc:Add>
+                          <ogc:Mul>
+                            <ogc:PropertyName>uo</ogc:PropertyName>
+                            <ogc:PropertyName>uo</ogc:PropertyName>
+                          </ogc:Mul>
+                          <ogc:Mul>
+                            <ogc:PropertyName>vo</ogc:PropertyName>
+                            <ogc:PropertyName>vo</ogc:PropertyName>
+                          </ogc:Mul>
+                        </ogc:Add>
+                      </ogc:Function>
+                      <ogc:Literal>1</ogc:Literal>
+                      <ogc:Literal>3</ogc:Literal>
+                      <ogc:Literal>0</ogc:Literal>
+                    </ogc:Function >
+                  </CssParameter>
 
                   <CssParameter name="stroke">#000000</CssParameter>
                 </Stroke>
