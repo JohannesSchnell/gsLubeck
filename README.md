@@ -10,7 +10,7 @@ follow [howto.md](https://github.com/JohannesSchnell/gsLubeck/blob/main/howto.md
 
 <details>
   <summary>
-use to set the gaps between rendered symbols
+set gaps between rendered symbols
 </summary>
 
 ```xml
