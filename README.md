@@ -26,6 +26,7 @@ use to set the gaps between rendered symbols
   <summary>
 different symbols
 </summary>
+
 allows for [build-in and generic shapes](https://docs.geoserver.org/latest/en/user/styling/sld/extensions/pointsymbols.html)
 
 ```xml
