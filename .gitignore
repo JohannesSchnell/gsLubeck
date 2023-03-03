@@ -2,7 +2,10 @@
 layers/netcdf/*
 !layers/netcdf/*.nc
 
-#
+#excludes geoserver tmp-shapefile 
+*.qix
+
+#just shp and netcdf folders will be pushed
 layers/*
 !layers/netcdf/
 !layers/shp
