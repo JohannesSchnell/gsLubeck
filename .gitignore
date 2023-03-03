@@ -1,3 +1,8 @@
-#exclude all files in /ncdf except .nc files
-ncdf/*
-!ncdf/*.nc
+#exclude all files in ./layers/netcdf except .nc files
+layers/netcdf/*
+!layers/netcdf/*.nc
+
+#
+layers/*
+!layers/netcdf/
+!layers/shp

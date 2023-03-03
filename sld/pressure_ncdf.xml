@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld"
+  xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sld
+ http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd" version="1.0.0">
+  <NamedLayer>
+    <Name>pressure</Name>
+    <UserStyle>
+      <FeatureTypeStyle>
+        <Title>mbar</Title>
+        <Transformation>
+
+          <ogc:Function name="ras:Contour">
+            <ogc:Function name="parameter">
+              <ogc:Literal>data</ogc:Literal>
+            </ogc:Function>
+            <ogc:Function name="parameter">
+              <ogc:Literal>levels</ogc:Literal>
+              <!--  " ".join([s + str(101200 + 200*i) + e for i in range(4)]) -->
+
+              <ogc:Literal>90000</ogc:Literal>
+              <ogc:Literal>90500</ogc:Literal>
+              <ogc:Literal>91000</ogc:Literal>
+              <ogc:Literal>91500</ogc:Literal>
+              <ogc:Literal>92000</ogc:Literal>
+              <ogc:Literal>92500</ogc:Literal>
+              <ogc:Literal>93000</ogc:Literal>
+              <ogc:Literal>93500</ogc:Literal>
+              <ogc:Literal>94000</ogc:Literal>
+              <ogc:Literal>94500</ogc:Literal>
+              <ogc:Literal>95000</ogc:Literal>
+              <ogc:Literal>95500</ogc:Literal>
+              <ogc:Literal>96000</ogc:Literal>
+              <ogc:Literal>96500</ogc:Literal>
+              <ogc:Literal>97000</ogc:Literal>
+              <ogc:Literal>97500</ogc:Literal>
+              <ogc:Literal>98000</ogc:Literal>
+              <ogc:Literal>98500</ogc:Literal>
+              <ogc:Literal>99000</ogc:Literal>
+              <ogc:Literal>99500</ogc:Literal>
+              <ogc:Literal>100000</ogc:Literal>
+              <ogc:Literal>100500</ogc:Literal>
+              <ogc:Literal>101000</ogc:Literal>
+              <ogc:Literal>101500</ogc:Literal>
+              <ogc:Literal>102000</ogc:Literal>
+              <ogc:Literal>102500</ogc:Literal>
+              <ogc:Literal>103000</ogc:Literal>
+              <ogc:Literal>103500</ogc:Literal>
+              <ogc:Literal>104000</ogc:Literal>
+              <ogc:Literal>104500</ogc:Literal>
+              <ogc:Literal>105000</ogc:Literal>
+              <ogc:Literal>105500</ogc:Literal>
+              <ogc:Literal>106000</ogc:Literal>
+              <ogc:Literal>106500</ogc:Literal>
+              <ogc:Literal>107000</ogc:Literal>
+              <ogc:Literal>107500</ogc:Literal>
+              <ogc:Literal>108000</ogc:Literal>
+              <ogc:Literal>108500</ogc:Literal>
+              <ogc:Literal>109000</ogc:Literal>
+              <ogc:Literal>109500</ogc:Literal>
+              <ogc:Literal>110000</ogc:Literal>
+            </ogc:Function>
+          </ogc:Function>
+
+        </Transformation>
+        <Rule>
+          <Name>rule1</Name>
+          <Title>Contour Line</Title>
+
+
+
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+          <TextSymbolizer>
+            <Label>
+              <ogc:Function name="numberFormat">
+                <ogc:Literal>0</ogc:Literal>
+                <ogc:Div>
+                  <ogc:PropertyName>value</ogc:PropertyName>
+                  <ogc:Literal> 100 </ogc:Literal>
+                </ogc:Div>
+              </ogc:Function>
+              <ogc:Literal>mBar </ogc:Literal>
+            </Label>
+            <Font>
+              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-style">Normal</CssParameter>
+              <CssParameter name="font-size">18</CssParameter>
+            </Font>
+
+            <Halo>
+              <Radius>
+                <ogc:Literal>3.5</ogc:Literal>
+              </Radius>
+              <Fill>
+                <CssParameter name="fill">#FFFFFF</CssParameter>
+                <CssParameter name="fill-opacity">1</CssParameter>
+              </Fill>
+            </Halo>
+            <Fill>
+              <CssParameter name="fill">#000000</CssParameter>
+            </Fill>
+            <Priority>2000</Priority>
+            <VendorOption name="followLine">true</VendorOption>
+            <VendorOption name="repeat">10000</VendorOption>
+            <VendorOption name="maxDisplacement">50</VendorOption>
+            <VendorOption name="maxAngleDelta">30</VendorOption>
+          </TextSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>
