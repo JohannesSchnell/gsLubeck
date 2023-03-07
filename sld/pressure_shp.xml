@@ -42,7 +42,7 @@
                   <ogc:Literal> 100 </ogc:Literal>
                 </ogc:Div>
               </ogc:Function>
-              <ogc:Literal>mbar </ogc:Literal>
+
 
 
             </Label>
@@ -54,7 +54,7 @@
             </Font>
             <Halo>
               <Radius>
-                <ogc:Literal>2</ogc:Literal>
+                <ogc:Literal>2.8</ogc:Literal>
               </Radius>
               <Fill>
                 <CssParameter name="fill">#FFFFFF</CssParameter>
@@ -67,8 +67,9 @@
             <Priority>2000</Priority>
             <VendorOption name="followLine">true</VendorOption>
             <VendorOption name="repeat">10000</VendorOption>
-            <VendorOption name="maxDisplacement">50</VendorOption>
-            <VendorOption name="maxAngleDelta">30</VendorOption>
+            <VendorOption name="maxDisplacement">0</VendorOption>
+
+            <VendorOption name="maxAngleDelta">50</VendorOption>
           </TextSymbolizer>
         </Rule>
 

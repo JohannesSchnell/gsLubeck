@@ -7,5 +7,5 @@ layers/netcdf/*
 
 #just shp and netcdf folders will be pushed
 layers/*
-!layers/netcdf/
-!layers/shp
+#!layers/netcdf/
+#!layers/shp
